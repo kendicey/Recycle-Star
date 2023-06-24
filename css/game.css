@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+}
+
+.mini_game {
+    border: 1px solid grey;
+    border-radius: 25px;
+    margin: 5rem;
+    padding: 5rem;
+    height: 600px;
+}
+
+.recyclable_items_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.recyclable_item {
+    margin: 0 3rem;
+}
+
+.items {
+    width: 50px;
+}
+
+.bins_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bins {
+    width: 80px;
+    margin: 0 2rem;
+}
+
+.hidden {
+    display: none;
+}
