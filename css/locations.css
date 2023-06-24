@@ -105,9 +105,12 @@ main {
     text-align: center;
     
   }
-  
 
   .resources {
     text-align: left;
+  }
+
+  iframe {
+    border-radius: 20px;
   }
   
