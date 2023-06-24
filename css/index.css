@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+nav {
+    height: 6rem;
+    background: linear-gradient(180deg, #FFAD05 0%, rgba(255, 173, 5, 0.00) 100%);
+}
+
+#recycle_star_logo {
+    height: 4rem;
+}
+
+#recycle_star_word_logo {
+    height: 2rem;
+}
+
+#recycle_star_word {
+    color: #195041;
+    font-size: 96px;
+    font-family: Jomhuria;
+}
+
+.nav_links_container {
+    float: right;
+}
+
+.nav_links {
+    text-decoration: none;
+}
+
+.earth_picture_container {
+    width: 30%;
+    margin: auto;
+}
+
+#earth_picture {
+    animation: rotate360 90s linear infinite;
+}
+
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.intro_textbox {
+    width: 70%;
+}
