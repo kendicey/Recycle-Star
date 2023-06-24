@@ -13,7 +13,7 @@ const dragOver = (evt) => {
     evt.preventDefault();
 }
 
-function drop(evt) {
+const drop = (evt) => {
     evt.preventDefault();
 
     const droppedItemId = evt.dataTransfer.getData('text/plain');
@@ -28,7 +28,7 @@ function drop(evt) {
     }
 }
   
-function isCorrectBin(itemId, binId) {
+const isCorrectBin = (itemId, binId) => {
     if (itemId === 'newspapers' && binId === 'mixed_paper_bin' || 
         itemId === 'water_bottles' && binId === 'recyclable_bin' ||
         itemId === 'shampoo_bottles' && binId === 'recyclable_bin' ||
@@ -45,6 +45,16 @@ function isCorrectBin(itemId, binId) {
     }
 }
 
+const pickItem = () => {
+    fetch('../items.json')
+        .then((response) => response.json())
+        .then((data) => {
+            const items = data;
+            
+        })
+        .catch((err) => console.log('Error:', err))
+}
+
 recyclable_item.forEach(item => {
     item.addEventListener('dragstart', dragStart);
     item.addEventListener('dragend', dragEnd);
@@ -54,4 +64,7 @@ recycle_bins.forEach(bin => {
     bin.addEventListener('dragover', dragOver);
     bin.addEventListener('drop', drop);
 });
+
+let numberRecord = [];
+
 

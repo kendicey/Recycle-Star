@@ -1,0 +1,17 @@
+[
+    {
+        "id": "newspapers",
+        "src": "assets/soda-cans-icon.png",
+        "alt": "newspapers"
+    },
+    {
+        "id": "water_bottles",
+        "src": "assets/soda-cans-icon.png",
+        "alt": "water bottles"
+    },
+    {
+        "id": "shampoo_bottles",
+        "src": "assets/soda-cans-icon.png",
+        "alt": "shampoo bottles"
+    }
+]
