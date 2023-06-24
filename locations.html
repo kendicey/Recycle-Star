@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+
+
     <title>Document</title>
 <style>
 
+    body{
+        margin: 0;
+        padding: 0;
+    }
     /* navigation menu */
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         text-decoration: none ;
+        background: rgb(255,173,5);
+        background: linear-gradient(0deg, rgba(255,173,5,0.0214679621848739) 0%, rgba(255,173,5,1) 100%);
+        font-family: 'Rubik', sans-serif;
+        font-weight: 800;
+        font-size: 1.2rem;
+        padding: 20px;
         
     }
 
@@ -19,8 +35,22 @@
         /* margin-left: auto; */
         text-decoration: none;
         margin: 0 20px;
+        color: black;
     }
 
+    .logo-info {
+        display: flex;
+        align-items: center;
+}
+
+    #recycle_star_logo {
+        margin-right: 10px; /* Add margin between the logos */
+        }
+
+    #recycle_star_word_logo {
+        display: flex;
+        align-items: center;
+}
 
 </style>
 
@@ -30,8 +60,8 @@
     <header>
         <nav>
             <div class="logo-info">
-            <img id="recycle_star_logo" src="assets/logo.png" alt="Recycle Star logo" width="100px"/>
-            <img id="recycle_star_word_logo" src="assets/Recycle Star.png" alt="Recycle Star word logo" width="200px">
+            <img id="recycle_star_logo" src="assets/nav-bar/logo.png" alt="Recycle Star logo" width="100px"/>
+            <img id="recycle_star_word_logo" src="assets/nav-bar/Recycle Star.png" alt="Recycle Star word logo" width="200px">
             </div>
             <div class="nav_links_container"> 
                 <a class="nav_links" href="game.html">MINI GAME</a>
