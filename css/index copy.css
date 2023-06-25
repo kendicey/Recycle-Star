@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Cuprum&family=Inter&family=Jomhuria&family=Montserrat:wght@300&family=Nunito+Sans:wght@400;700&family=Rubik:wght@300;700&display=swap');
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -83,7 +85,7 @@ main {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 5rem;
     padding: 50px 20px;
-    background-color: rgba(181, 255, 210, 0.5);
+    background-color: rgba(150, 206, 172, 0.3);
 }
 
 .impact_cards {
