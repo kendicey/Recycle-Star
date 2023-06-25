@@ -107,10 +107,45 @@ main {
   }
 
   .resources {
-    text-align: left;
+    text-align: center;
   }
 
   iframe {
     border-radius: 20px;
   }
   
+  p {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+.resource-link {
+  background-color: rgb(255,173,5);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+  color: black;
+}
+
+ a  {
+  text-decoration: none;
+}
+
+  /* Footer */
+
+  footer {
+    margin-top: 5rem;
+    background: rgb(255,173,5);
+    background: linear-gradient(180deg, rgba(255,173,5,0.0214679621848739) 0%, rgba(255,173,5,1) 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
