@@ -90,8 +90,6 @@ a.nav_links:hover {
 }
 
 
-
-
 /* Body */
 
 h1{
@@ -114,17 +112,21 @@ main {
     border-radius: 20px;
   }
   
-  p {
+  .body-text {
     text-align: center;
     padding-bottom: 50px;
   }
 
 .resource-link {
-  background-color: rgb(255,173,5);
+  background-color: #3375f7;
   padding: 30px;
   margin: 20px 0;
   border-radius: 10px;
-  color: black;
+  color: white;
+}
+
+.resource-link:hover {
+  background-color:  rgb(255,173,5);
 }
 
  a  {

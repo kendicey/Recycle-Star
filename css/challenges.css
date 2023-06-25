@@ -85,15 +85,21 @@ a.nav_links:hover {
 .find_challenge_button {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
-    font-size: large;
+    font-size: 20px;
     text-align: center;
     margin: 2.5rem auto 2rem auto;
     border-radius: 10px;
     height: fit-content;
     width: 210px;
     padding: 1rem 1rem;
-    background: #5BC57A;
+    background: #3375f7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.find_challenge_button:hover {
+    background: rgb(255,173,5);
+    color: white;
 }
 
 .join_us {

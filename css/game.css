@@ -69,14 +69,38 @@ a.nav_links:hover {
     font-family: 'Inter', sans-serif;
     border-radius: 10px;
     height: fit-content;
-    padding: 0.5rem 1.5rem;
-    background: #5BC57A;
+    padding: 1rem;
+    background: #3375f7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.intro .buttons:hover {
+    background: rgb(255,173,5);
+    color: white;
+}
+
+
 .intro .buttons a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 20px;
+}
+
+.return {
+    width: 150px;
+    height: auto;
+    color: white;
+    background: #3375f7;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+a div.return {
+    text-decoration: none;
 }
 
 .game_name {
@@ -223,10 +247,11 @@ footer {
 }
 
 .stickers .bottle-sticker {
-    width: 150px;
-    height: fit-content;
+    height: 300px;
+    width: fit-content;
     transform: rotate(10.512deg);
     flex-shrink: 0;
+    filter: drop-shadow(10px 5px 3px rgb(189, 186, 186));
 }
 
 .stickers .star-sticker {
@@ -234,6 +259,7 @@ footer {
     height: fit-content;
     transform: rotate(-10.512deg);
     flex-shrink: 0;
+    filter: drop-shadow(10px 5px 3px rgb(189, 186, 186));
 }
 
 footer {
