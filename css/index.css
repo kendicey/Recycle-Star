@@ -53,6 +53,7 @@ a.nav_links{
 
 #earth_picture {
     animation: rotate360 90s linear infinite;
+    margin: 1rem 0 5rem 0;
 }
 
 @keyframes rotate360 {
@@ -69,10 +70,30 @@ a.nav_links{
     justify-content: space-around;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    margin-bottom: 5rem;
 }
 
 .impact_cards {
     width: 200px;
+    padding: 1rem;
+}
+
+.impact_cards:nth-child(1){
+    border-radius: 15px;
+    background: #ECF7EF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.impact_cards:nth-child(2){
+    border-radius: 15px;
+    background: #FEC;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.impact_cards:nth-child(3){
+    border-radius: 15px;
+    background: #FFE9E9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .impact_card_titles {
@@ -85,15 +106,12 @@ a.nav_links{
     margin-top: 0;
 }
 
-.intro_textbox {
-    width: 70%;
-}
-
 .card_titles {
     font-weight: 700;
 }
 
 .intro_textbox {
+    width: 70%;
     border-radius: 15px;
     background: #B9EAFF;
     box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
@@ -128,5 +146,52 @@ a.nav_links{
     display: flex;
     justify-content: space-around;
     text-align: center;
+    width: 70%;
+    font-family: 'Rubik', sans-serif;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 2rem;
+    background: #EAFFF0;
+    box-shadow: 3px 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card_icons_container {
+    border-radius: 15px;
+    background: #ADCFFF;
+    width: 70px;
+    height: 70px;
+}
+
+.buttons {
+    border-radius: 5px;
+    line-height: 40px;
+    width: 150px;
+    height: 40px;
+    background: #5BC57A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.buttons a {
+    text-decoration: none;
     font-family: 'Rubik', sans-serif;
 }
+
+footer {
+    background: linear-gradient(0deg, rgba(255, 173, 5, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    font-family: 'Rubik', sans-serif;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    line-height: 50px;
+  }
+  
+  
