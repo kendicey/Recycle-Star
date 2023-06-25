@@ -1,6 +1,9 @@
-const recyclable_item = document.querySelectorAll(".items");
+const recyclable_item = document.querySelector(".items");
 const recycle_bins = document.querySelectorAll(".bins");
-const recyclable_item_container = document.querySelector(".recyclable_item_container");
+const recyclable_item_container = document.querySelector(".items");
+const score_text = document.querySelector(".score");
+const mini_game = document.querySelector(".mini_game");
+const play_again = document.querySelector(".play_again");
 
 const dragStart = (evt) => {
     evt.dataTransfer.setData('text/plain', evt.target.id);
@@ -14,7 +17,7 @@ const dragOver = (evt) => {
     evt.preventDefault();
 }
 
-const drop = (evt) => {
+const drop = async(evt) => {
     evt.preventDefault();
 
     const droppedItemId = evt.dataTransfer.getData('text/plain');
@@ -22,15 +25,17 @@ const drop = (evt) => {
   
     if (isCorrectBin(droppedItemId, binId)) {
         const droppedItem = document.getElementById(droppedItemId);
-        console.log()
         droppedItem.classList.add('hidden');
         score++;
+        score_text.innerHTML = `Score: ${score}/10`;
         if (numberRecord.length < 10){
-            const nextItem = pickItem();
-            recyclable_item_container.removeChild();
-            recyclable_item_container.insertAdjacentHTML("afterbegin", nextItem);
+            pickItem().then(nextItem => {
+                recyclable_item_container.innerHTML = nextItem;
+                attachEventListeners();
+            });
         } else {
             alert(`Congratulations! You are now a Recycle Star!`);
+            play_again.classList.remove('nonvisible');
         }
     } else {
         const droppedItem = document.getElementById(droppedItemId);
@@ -39,16 +44,7 @@ const drop = (evt) => {
 }
   
 const isCorrectBin = (itemId, binId) => {
-    if (itemId === 'newspapers' && binId === 'mixed_paper_bin' || 
-        itemId === 'water_bottles' && binId === 'recyclable_bin' ||
-        itemId === 'shampoo_bottles' && binId === 'recyclable_bin' ||
-        itemId === 'soda_cans' && binId === 'recyclable_bin' ||
-        itemId === 'glass_jar' && binId === 'glass_bin' ||
-        itemId === 'magazine' && binId === 'mixed_paper_bin' ||
-        itemId === 'paper_cup_with_lid' && binId === 'recyclable_bin' ||
-        itemId === 'battery' && binId === 'return_it' ||
-        itemId === 'electronics' && binId === 'return_it' ||
-        itemId === 'styrofoam' && binId === 'return_it') {
+    if (itemId.includes(binId)) {
         return true;
     } else {
         return false;
@@ -60,28 +56,44 @@ const pickItem = () => {
         .then((response) => response.json())
         .then((data) => {
             const items = data;
-            const randNum = Math.floor(Math.random()*items.length);
+            let randNum = Math.floor(Math.random()*items.length);
             while (numberRecord.includes(randNum)){
                 randNum = Math.floor(Math.random()*items.length);
             }
             numberRecord.push(randNum);
             console.log(numberRecord);
-            return `<img id=${items[randNum].id} class="items" src=${items[randNum].src} alt=${items[randNum].alt} draggable="true">`;
+            return `<img id=${items[randNum].id + "_" + items[randNum].bin} class="items" src=${items[randNum].src} alt=${items[randNum].alt} draggable="true">`;
         })
         .catch((err) => console.log('Error:', err))
 }
 
-recyclable_item.forEach(item => {
-    item.addEventListener('dragstart', dragStart);
-    item.addEventListener('dragend', dragEnd);
-});
-
-recycle_bins.forEach(bin => {
-    bin.addEventListener('dragover', dragOver);
-    bin.addEventListener('drop', drop);
-});
+const restart = () => {
+    numberRecord = [];
+    score = 0;
+    score_text.innerHTML = `Score: ${score}/10`;
+    play_again.classList.add("nonvisible");
+    render();
+}
 
 let numberRecord = [];
+let score = 0;
 
-pickItem().then(data => recyclable_item_container.insertAdjacentHTML("afterbegin", data));
+play_again.addEventListener("click", restart);
 
+const attachEventListeners = () => {
+    recyclable_item.addEventListener('dragstart', dragStart);
+    recyclable_item.addEventListener('dragend', dragEnd);
+
+    recycle_bins.forEach(bin => {
+        bin.addEventListener('dragover', dragOver);
+        bin.addEventListener('drop', drop);
+    });
+};
+
+const render = async () => {
+    const nextItem = await pickItem();
+    recyclable_item_container.innerHTML = nextItem;
+    attachEventListeners();
+};
+
+render();

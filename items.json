@@ -1,17 +1,80 @@
 [
     {
-        "id": "newspapers",
-        "src": "assets/newspaper.png",
-        "alt": "newspapers"
+        "id": "banana-peel",
+        "src": "assets/mini-game/recycle-items/banana-peel.png",
+        "alt": "banana_peel_image",
+        "bin": "organic_bin"
     },
     {
-        "id": "water_bottles",
-        "src": "assets/water_bottles.png",
-        "alt": "water bottles"
+        "id": "batteries",
+        "src": "assets/mini-game/recycle-items/batteries.png",
+        "alt": "batteries_image",
+        "bin": "return_it_bin"
     },
     {
-        "id": "shampoo_bottles",
-        "src": "assets/shampoo_bottles.png",
-        "alt": "shampoo bottles"
+        "id": "box",
+        "src": "assets/mini-game/recycle-items/box.png",
+        "alt": "box_image",
+        "bin": "mixed_paper_bin"
+    },
+    {
+        "id": "computer",
+        "src": "assets/mini-game/recycle-items/computer.png",
+        "alt": "computer_image",
+        "bin": "return_it_bin"
+    },
+    {
+        "id": "glass-bowl",
+        "src": "assets/mini-game/recycle-items/glass-bowl.png",
+        "alt": "glass_bowl_image",
+        "bin": "glass_bin"
+    },
+    {
+        "id": "glass-jar",
+        "src": "assets/mini-game/recycle-items/glass-jar.png",
+        "alt": "glass_jar_image",
+        "bin": "glass_bin"
+    },
+    {
+        "id": "newspaper",
+        "src": "assets/mini-game/recycle-items/newspaper.png",
+        "alt": "newspaper_image",
+        "bin": "mixed_paper_bin"
+    },
+    {
+        "id": "phone",
+        "src": "assets/mini-game/recycle-items/phone.png",
+        "alt": "phone_image",
+        "bin": "return_it_bin"
+    },
+    {
+        "id": "plastic-bag",
+        "src": "assets/mini-game/recycle-items/plastic-bag.png",
+        "alt": "plastic_bag_image",
+        "bin": "plastic_bin"
+    },
+    {
+        "id": "pop",
+        "src": "assets/mini-game/recycle-items/pop.png",
+        "alt": "pop_image",
+        "bin": "return_it_bin"
+    },
+    {
+        "id": "pump",
+        "src": "assets/mini-game/recycle-items/pump.png",
+        "alt": "pump_image",
+        "bin": "plastic_bin"
+    },
+    {
+        "id": "soap-jug",
+        "src": "assets/mini-game/recycle-items/soap-jug.png",
+        "alt": "soap_jug_image",
+        "bin": "plastic_bin"
+    },
+    {
+        "id": "tree",
+        "src": "assets/mini-game/recycle-items/tree.png",
+        "alt": "tree_image",
+        "bin": "organic_bin"
     }
 ]

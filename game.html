@@ -20,99 +20,54 @@
             </div>
         </nav>
     </header>
-    <h1>Mini Game</h1>
-    <div class="mini_game">
-        <div class="recyclable_items_container">
-            <div class="recyclable_item_container">
-                <!-- <figure> -->
-                    <!-- <img id="newspapers" class="items" src="assets/soda-cans-icon.png" alt="newspapers"  draggable="true"> -->
-                    <!-- <figcaption>Newspapers</figcaption>
-                </figure> -->
-            </div>
-            <!-- <div id="water_bottles" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="water bottles">
-                    <figcaption>Water Bottles</figcaption>
-                </figure>
-            </div>
-            <div id="shampoo_bottles" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="shampoo bottles">
-                    <figcaption>Shampoo Bottles</figcaption>
-                </figure>
-            </div>
-            <div id="soda_cans" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="soda cans">
-                    <figcaption>Soda Cans</figcaption>
-                </figure>
-            </div>
-            <div id="glass_jar" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="glass jar">
-                    <figcaption>Glass Jar</figcaption>
-                </figure>
-            </div>
-            <div id="magazine" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="magazine">
-                    <figcaption>Magazine</figcaption>
-                </figure>
-            </div>
-            <div id="paper_cup_with_lid" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="paper cup with lid">
-                    <figcaption>Paper Cup with Lid</figcaption>
-                </figure>
-            </div>
-            <div id="battery" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="battery">
-                    <figcaption>Battery</figcaption>
-                </figure>
-            </div>
-            <div id="electronics" class="recyclable_item" draggable="true">
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="electronics">
-                    <figcaption>Electronics</figcaption>
-                </figure>
-            </div>
-            <div id="styrofoam" class="recyclable_item" draggable="true"> 
-                <figure>
-                    <img class="items" src="assets/soda-cans-icon.png" alt="styrofoam">
-                    <figcaption>Styrofoam</figcaption>
-                </figure>
-            </div> -->
+    <div class="wrapper">
+        <div class="intro">
+            <p>Practice recycling with our mini game!</p>
+            <div class="buttons"><a href="#how_to_play">How to Play</a></div>
         </div>
-
-        <div class="bins_container">
-            <div>
-                <figure>
-                    <img id="recyclable_bin" class="bins" src="assets/recycle-line-icon.png" alt="recyclable bin">
-                    <figcaption>Recyclable Bin</figcaption>
-                </figure>
+        <div class="game_name">Recycling Materials</div>
+        <div class="mini_game">
+            <div class="recyclable_items_container">
+                <div class="items"></div>
             </div>
-            <div>
-                <figure>
-                    <img id="mixed_paper_bin" class="bins" src="assets/recycle-line-icon.png" alt="mixed paper bin">
-                    <figcaption>Mixed Paper Bin</figcaption>
-                </figure>
+            <div class="bins_container">
+                <div>
+                    <img id="glass_bin" class="bins" src="assets/mini-game/recycle-bins/glass-bin.png" alt="glass bin">
+                </div>
+                <div>
+                    <img id="mixed_paper_bin" class="bins" src="assets/mini-game/recycle-bins/mixed-paper-bin.png" alt="mixed paper bin">
+                </div>
+                <div>
+                    <img id="organic_bin" class="bins" src="assets/mini-game/recycle-bins/organic-bin.png" alt="organic bin">
+                </div>
+                <div>
+                    <img id="plastic_bin" class="bins" src="assets/mini-game/recycle-bins/plastic-bin.png" alt="plastic bin">
+                </div>
+                <div>
+                    <img id="_bin" class="bins" src="assets/mini-game/recycle-bins/return-it-depot-bin.png" alt="return it bin">
+                </div>
             </div>
-            <div>
-                <figure>
-                    <img id="glass_bin" class="bins" src="assets/recycle-line-icon.png" alt="glass bin">
-                    <figcaption>Glass Bin</figcaption>
-                </figure>
-            </div>
-            <div>
-                <figure>
-                    <img id="return_it" class="bins" src="assets/recycle-line-icon.png" alt="ReturnIt">
-                    <figcaption>Return It</figcaption>
-                </figure>
-            </div>
+            <div class="score">Score: 0/10</div>
+            <div class="play_again_div"><button class="play_again nonvisible">Play Again</button></div>
+        </div>
+        <p class="star_given_text">80000 Recycling Stars Given to Date!</p>
+        <p class="welcome_text">Welcome to the Recycling Material Game!</p>
+        <p class="how_to_play_text">How to Play:</p>
+        <div id="how_to_play" class="how_to_play">
+            <ol>
+                <li>You will see different types of packaging and materials on the screen.</li>
+                <li>There are 5 bins labeled “Plastic,” “Glass,” “Metal,” “Paper,” “Return It”.</li>
+                <li>Your task is to drag each item and drop it into the correct recycling bin</li>
+                <li>To drag an item, click and hold, then drag it</li>
+                <li>When you are at the correct recycling bin, release to drop the item inside</li>
+                <li>Good job! Your first item has been sorted. Keep going and try to sort all the items in to their correct bins.</li>
+                <li>Have fun!</li>
+            </ol>
         </div>
     </div>
-
+    <footer>
+        Copyright © Recycle Star
+    </footer>
     <script src="scripts/game.js"></script>
 </body>
 </html>
