@@ -27,24 +27,6 @@ a.nav_links{
     color: black;
 }
 
-/* .logo-info {
-    display: flex;
-    align-items: center;
-} */
-
-/* #recycle_star_logo {
-    margin-right: 10px; 
-} */
-
-/* #recycle_star_word_logo {
-    display: flex;
-    align-items: center;
-} */
-
-.nav_links_container {
-    float: right;
-}
-
 .nav_links {
     text-decoration: none;
 }
@@ -87,7 +69,7 @@ main {
     font-family: 'Rubik', sans-serif;
     margin-bottom: 5rem;
     padding: 50px 20px;
-    background-color: rgba(150, 206, 172, 0.3);
+    background-color: rgba(199, 165, 242, .35);
 }
 
 .impact_cards {
@@ -98,7 +80,6 @@ main {
 .impact_card_titles {
     font-size: larger;
     font-weight: bold;
-    margin-bottom: 0;
 }
 
 .impact_card_desc {
@@ -110,7 +91,7 @@ main {
 }
 
 .intro_textbox {
-    width: 40%;
+    width: 30%;
     margin: auto;
     text-align: left;
 }
@@ -161,7 +142,6 @@ main {
 
 .card_icons_container {
     border-radius: 15px;
-    background: #ADCFFF;
     width: 70px;
     height: 70px;
 }
@@ -171,15 +151,15 @@ main {
     line-height: 40px;
     width: 150px;
     height: 40px;
-    background: #5BC57A;
+    background: #3375f7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .buttons a {
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
-    color: black;
-    font-weight: 800;
+    color: white;
+
 }
 
 footer {

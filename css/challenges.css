@@ -67,3 +67,15 @@ footer {
 .footer-content p {
     margin: 0;
 }
+
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .carousel-container {
+    max-width: 300px;
+  }
