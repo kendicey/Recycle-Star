@@ -35,11 +35,27 @@ a.nav_links:hover {
     color: #3519e3;
 }
 
+.logo-info {
+    display: flex;
+    align-items: center;
+}
+
 main {
     display: flex;
     justify-content: space-between;
     text-align: center;
   }
+
+  #recycle_star_logo {
+    margin-right: 10px; /* Add margin between the logos */
+    }
+
+#recycle_star_word_logo {
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 .earth_picture_container {
