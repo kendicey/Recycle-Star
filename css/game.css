@@ -143,6 +143,9 @@ a.nav_links:hover {
 }
 
 .play_again_div {
+    text-align: center;
+}
+
 footer {
     background: rgb(255,173,5);
     background: linear-gradient(180deg, rgba(255,173,5,0) 0%, rgba(255,173,5,0.25) 100%);
