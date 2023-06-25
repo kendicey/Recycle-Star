@@ -4,6 +4,7 @@ const recyclable_item_container = document.querySelector(".items");
 const score_text = document.querySelector(".score");
 const mini_game = document.querySelector(".mini_game");
 const play_again = document.querySelector(".play_again");
+const play_button = document.querySelector(".play_button");
 
 const dragStart = (evt) => {
     evt.dataTransfer.setData('text/plain', evt.target.id);
@@ -67,6 +68,10 @@ const pickItem = () => {
         .catch((err) => console.log('Error:', err))
 }
 
+const start = () => {
+    play_button.classList.add("hidden");
+}
+
 const restart = () => {
     numberRecord = [];
     score = 0;
@@ -78,6 +83,7 @@ const restart = () => {
 let numberRecord = [];
 let score = 0;
 
+play_button.addEventListener("click", start);
 play_again.addEventListener("click", restart);
 
 const attachEventListeners = () => {

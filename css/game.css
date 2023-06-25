@@ -92,7 +92,15 @@ a.nav_links:hover {
     border: 25px solid #64A3FF;
     margin: 1rem auto;
     padding: 3rem 0;
-    /* height: 400px; */
+    position: relative;
+}
+
+.play_button {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    z-index: 1;
+    width: 350px;
 }
 
 .recyclable_items_container {
