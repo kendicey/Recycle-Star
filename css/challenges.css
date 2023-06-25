@@ -24,6 +24,10 @@ a.nav_links{
     color: black;
 }
 
+a.nav_links:hover {
+    color: #3519e3;
+}
+
 .logo-info {
     display: flex;
     align-items: center;

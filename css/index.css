@@ -46,6 +46,10 @@ a.nav_links{
     text-decoration: none;
 }
 
+a.nav_links:hover {
+    color: #3519e3;
+}
+
 .earth_picture_container {
     width: 30%;
     margin: auto;
