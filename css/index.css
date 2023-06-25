@@ -10,7 +10,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     text-decoration: none ;
-    background: rgb(255,173,5);
+    background: rgba(255,173,5 0.25);
     background: linear-gradient(0deg, rgba(255,173,5,0.0214679621848739) 0%, rgba(255,173,5,1) 100%);
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
